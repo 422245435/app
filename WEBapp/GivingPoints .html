@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>实体店兑换商品</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/base.css" />
+		<script type="text/javascript" src="js/GivingPoints.js" ></script>
+	</head>
+	<body>
+		<div class="header">
+			<a href="javascript:history.go(-1)"><img src="picture/fanhui.png"></a>
+			<span>实体店兑换商品</span>
+		</div>
+		<div class=" borAll wd90 height30 lineh30 mA bor_ra5">
+			<ul class="pL5 pR5 ">
+				<li class="fl font16"><span class="height40 borR pR10px">可用积分</span></li>
+				<li class="fl font16 pL5" id="point">2820</li>
+			</ul>
+		</div>
+		<div class="wd90 mA borAll bor_ra5 mT10">
+			<ul>
+				<li class="borB height45 lineh45 font16 c7f7f"><input class="pL5 borN wd90" placeholder="赠送给会员编号" type="text"></input></li>
+				<li class="borB height45 lineh45 font16 c7f7f"><input class="pL5 borN wd90" placeholder="自动读取会员名" type="text"></input></li>
+				<li class="borB height45 lineh45 font16 c7f7f"><input class="pL5 borN wd90" placeholder="赠送积分" type="text" id="give" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"></input></li>
+		</div>
+		<a href="MyWealth.html" id="aLogin"> 
+			<div class="mT250 texC bor_ra5 height30 lineh30 wd90 font17 mA bg3bb4 cfff changpassword_btn">确定</div>
+		</a>
+	</body>
+</html>
